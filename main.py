@@ -1,5 +1,4 @@
-
-def count_words_in_string(input):
+def count_words_in_string(input: str) -> int:
     count = len(input.split())
     return count
 
