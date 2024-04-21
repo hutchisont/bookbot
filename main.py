@@ -8,10 +8,11 @@ def per_character_count(input: str) -> dict[str, int]:
     tracker: dict[str, int] = {}
 
     for char in input:
-        if char in tracker:
-            tracker[char] += 1
-        else:
-            tracker[char] = 1
+        if char.isalpha():
+            if char in tracker:
+                tracker[char] += 1
+            else:
+                tracker[char] = 1
 
     return tracker
 
